@@ -1,0 +1,39 @@
+{
+  "name": "remotion-talking-head-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "口播视频起手模板:复用 ../kit 的引擎级镜头/组件,改 props.json 即出片。内置 Remotion 网页动画引擎全家桶(R3F 3D / anime.js / 原生 noise·paths·shapes),按需扩展。",
+  "scripts": {
+    "dev": "remotion studio",
+    "still": "remotion still TalkingHead out/qa/f.png --frame=60 --scale=0.5",
+    "qa:still": "node ../.claude/skills/cyxj-remotion-produce/assets/qa-still.mjs",
+    "render": "remotion render TalkingHead out/video.mp4",
+    "render3d": "remotion render TalkingHead out/video.mp4 --gl=angle",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.6.1",
+    "@remotion/animation-utils": "4.0.484",
+    "@remotion/captions": "4.0.484",
+    "@remotion/cli": "4.0.484",
+    "@remotion/fonts": "4.0.484",
+    "@remotion/motion-blur": "4.0.484",
+    "@remotion/noise": "4.0.484",
+    "@remotion/paths": "4.0.484",
+    "@remotion/shapes": "4.0.484",
+    "@remotion/three": "4.0.484",
+    "@remotion/transitions": "4.0.484",
+    "@remotion/zod-types": "4.0.484",
+    "animejs": "4.0.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.484",
+    "three": "0.184.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/three": "0.184.1",
+    "typescript": "5.9.3"
+  }
+}

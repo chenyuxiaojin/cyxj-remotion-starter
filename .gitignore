@@ -1,0 +1,7 @@
+node_modules/
+out/
+qa-frames/
+.DS_Store
+*.log
+.last-edited-project
+.session-edits.json

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "lib": ["es2015", "dom"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "react": ["./node_modules/@types/react", "./node_modules/react"],
+      "react/jsx-runtime": [
+        "./node_modules/@types/react/jsx-runtime",
+        "./node_modules/react/jsx-runtime"
+      ],
+      "react/*": ["./node_modules/react/*"],
+      "remotion": ["./node_modules/remotion"],
+      "@remotion/motion-blur": ["./node_modules/@remotion/motion-blur"],
+      "@remotion/noise": ["./node_modules/@remotion/noise"],
+      "@remotion/paths": ["./node_modules/@remotion/paths"],
+      "@remotion/shapes": ["./node_modules/@remotion/shapes"]
+    }
+  },
+  "exclude": ["remotion.config.ts"]
+}

@@ -1,0 +1,35 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "background": "#22242a",
+  "scenes": [
+    {
+      "type": "title",
+      "durationInSeconds": 4,
+      "props": {
+        "cards": [
+          { "title": "示例标题卡", "appearAtSec": 0.3 },
+          { "title": "第二行·重点", "highlight": true, "appearAtSec": 1.2 }
+        ]
+      }
+    },
+    {
+      "type": "talk",
+      "durationInSeconds": 3,
+      "props": { "label": "观点留白小标" }
+    },
+    {
+      "type": "list",
+      "durationInSeconds": 6,
+      "props": {
+        "portraitSide": "right",
+        "items": [
+          { "title": "要点一", "appearAtSec": 0.3 },
+          { "title": "要点二·重点", "highlight": true, "appearAtSec": 1.5 },
+          { "title": "要点三·划掉", "muted": true, "appearAtSec": 2.7 }
+        ]
+      }
+    }
+  ]
+}
